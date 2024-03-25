@@ -2,12 +2,23 @@ package com.javaex.ex04;
 
 public class Base {
     public void service(String state) {
-    	if(state.equals("낮")) {
+//    	if(state.equals("낮")) {
+//    		day();
+//    	} else if(state.equals("밤")) {
+//    		night();
+//    	} else if(state.equals("오후")) {
+//    		afternoon();
+//    	}
+    	switch(state) {
+    	case "낮":
     		day();
-    	} else if(state.equals("밤")) {
+    		break;
+    	case "밤":
     		night();
-    	} else if(state.equals("오후")) {
+    		break;
+    	case "오후":
     		afternoon();
+    		break;
     	}
     }
 
